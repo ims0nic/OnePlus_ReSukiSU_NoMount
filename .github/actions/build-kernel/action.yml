@@ -2040,6 +2040,7 @@ runs:
         CONFIG_TCP_CONG_BBR3=y
         EOF
         #patch -p1 < "$KERNEL_PATCHES_FOLDER/common/bbrv3/0001-net-tcp-backport-BBRv3-to-$ANDROID_VER-$KERNEL_VER.patch"
+        cd "$COMMON_KERNEL_FOLDER"
         patch -p1 < "$KERNEL_PATCHES_FOLDER/common/bbrv3/0001-net-tcp-backport-BBRv3-to-android14-6.1.patch"
 
     - name: Add TTL Target Support

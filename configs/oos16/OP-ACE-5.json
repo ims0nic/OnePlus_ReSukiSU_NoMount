@@ -16,7 +16,7 @@
   "hmbird": false,
   "susfs": false,
   "opt": true,
-  "ds": true,
+  "ds": false,
   "bbg": false,
   "bbr": true,
   "bbr3": true,

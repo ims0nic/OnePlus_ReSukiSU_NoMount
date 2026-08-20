@@ -2041,7 +2041,7 @@ runs:
         EOF
         #patch -p1 < "$KERNEL_PATCHES_FOLDER/common/bbrv3/0001-net-tcp-backport-BBRv3-to-$ANDROID_VER-$KERNEL_VER.patch"
         cd "$COMMON_KERNEL_FOLDER"
-        patch -p1 < "$KERNEL_PATCHES_FOLDER/common/bbrv3/0001-net-tcp-backport-BBRv3-to-android14-6.1.patch"
+        patch -p1 < "$KERNEL_PATCHES_FOLDER/common/bbrv3/0001-net-tcp-backport-BBRv3-to-$ANDROID_VER-$KERNEL_VER.patch"
 
     - name: Add TTL Target Support
       if: ${{ env.OP_TTL == 'true' }}

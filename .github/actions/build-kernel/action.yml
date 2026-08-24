@@ -1788,12 +1788,12 @@ runs:
           find . -name "*.rej" -exec echo "=== {} ===" \; -exec cat {} \;
           exit 1
         fi
-        echo "Patching force_tcp_nodelay.patch"
-        if ! patch -p1 --forward < "$KERNEL_PATCHES_FOLDER/common/force_tcp_nodelay.patch"; then
-          echo "::error::force_tcp_nodelay patch failed. Dumping all .rej files:"
-          find . -name "*.rej" -exec echo "=== {} ===" \; -exec cat {} \;
-          exit 1
-        fi
+        #echo "Patching force_tcp_nodelay.patch"
+        #if ! patch -p1 --forward < "$KERNEL_PATCHES_FOLDER/common/force_tcp_nodelay.patch"; then
+        #  echo "::error::force_tcp_nodelay patch failed. Dumping all .rej files:"
+        #  find . -name "*.rej" -exec echo "=== {} ===" \; -exec cat {} \;
+        #  exit 1
+        #fi
         echo "Patching reduce_gc_thread_sleep_time.patch"
         if ! patch -p1 --forward < "$KERNEL_PATCHES_FOLDER/common/reduce_gc_thread_sleep_time.patch"; then
           echo "::error::reduce_gc_thread_sleep_time patch failed. Dumping all .rej files:"

@@ -1025,11 +1025,11 @@ runs:
         cd "$KERNEL_PLATFORM_FOLDER"
         echo "Adding ReSukiSU..."
         
-        if [ "${{ inputs.ksu_branch_or_hash }}" = "" ]; then
-          curl --fail --location --proto '=https' -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash -
-        else
-          curl --fail --location --proto '=https' -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_branch_or_hash }}"
-        fi
+        #if [ "${{ inputs.ksu_branch_or_hash }}" = "" ]; then
+        #  curl --fail --location --proto '=https' -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash -
+        #else
+        #  curl --fail --location --proto '=https' -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash -s "${{ inputs.ksu_branch_or_hash }}"
+        #fi
         
         cd KernelSU
         
